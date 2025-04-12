@@ -6,19 +6,34 @@
   <title>Contact – Ganpati Jewellery House</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 1rem 0;
+      text-align: center;
+    }
+    .logo {
+      max-width: 200px;
     }
     .title {
       color: #d4af37;
-      margin-bottom: 10px;
     }
     .map-container iframe {
       width: 100%;
       height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    .form-container iframe {
+      width: 100%;
+      height: 600px;
       border: none;
       border-radius: 10px;
     }
@@ -27,11 +42,13 @@
       color: #d4af37;
       margin-right: 8px;
     }
-    .form-container iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      border-radius: 10px;
+    footer {
+      background-color: #f8f9fa;
+      padding: 1.5rem;
+      text-align: center;
+      color: #444;
+      font-size: 0.95rem;
+      margin-top: auto;
     }
     @media (max-width: 576px) {
       .form-container iframe {
@@ -42,9 +59,13 @@
 </head>
 <body>
 
-  <div class="container py-5">
+  <header>
+    <img src="https://ganpatijewelleryhouse.in/assets/img/logo.png" alt="Ganpati Jewellery House Logo" class="logo" data-aos="fade-down">
+  </header>
+
+  <div class="container py-4">
     <h1 class="text-center title" data-aos="fade-up">Contact Ganpati Jewellery House</h1>
-    <p class="text-center" data-aos="fade-up" data-aos-delay="100">Reach out to us at our showrooms or message us below.</p>
+    <p class="text-center mb-4" data-aos="fade-up" data-aos-delay="100">Visit one of our showrooms or message us below.</p>
 
     <div class="row text-center my-5">
       <div class="col-md-6 mb-4" data-aos="fade-right">
@@ -76,6 +97,10 @@
       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8lNvt2mV2R6AJCHc0oA5hFZg2uAxzt1i1rWckl2A9LShE_A/viewform?embedded=true">Loading…</iframe>
     </div>
   </div>
+
+  <footer data-aos="fade-up">
+    &copy; 2025 Ganpati Jewellery House – Crafted with love in Jammu 💛
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
