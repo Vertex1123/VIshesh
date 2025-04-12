@@ -5,136 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact – Ganpati Jewellery House</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
   <style>
     body {
+      background-color: #000;
+      color: #fff;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #000; /* Black background */
-      color: #fff; /* White text */
     }
-    header img {
-      max-height: 100px;
+    .title-yellow {
+      color: #d4af37;
     }
-    .title {
-      color: #d4af37; /* Golden yellow for titles */
-      margin-bottom: 10px;
-      font-weight: bold;
-      background-color: #d4af37;
-      padding: 5px;
-      border-radius: 5px;
+    .map-box {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
     }
-    .map-container iframe {
+    iframe {
       width: 100%;
       height: 300px;
       border: none;
-      border-radius: 12px;
+      border-radius: 10px;
     }
     .form-container iframe {
-      width: 100%;
       height: 600px;
-      border: none;
-      border-radius: 12px;
+      border-radius: 10px;
     }
-    footer {
-      background-color: #333; /* Dark footer background */
-      padding: 20px 0;
+    .header-intro {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    .footer {
+      padding: 30px 0;
       text-align: center;
-      font-size: 0.9rem;
-      color: #fff;
-    }
-    .contact-icon {
+      background-color: #111;
       color: #d4af37;
-      margin-right: 8px;
+      margin-top: 60px;
     }
-    .blockquote-footer {
-      font-size: 1rem;
-      color: #fff;
+    .contact-box p {
+      margin-bottom: 0.3rem;
     }
-    /* Center the content properly */
-    .intro-container {
-      text-align: center;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-    .intro-container p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      margin-bottom: 30px;
-    }
-    .contact-container {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 30px;
-    }
-    .contact-item {
-      width: 48%;
-      text-align: center;
-      padding: 20px;
-      border: 2px solid #d4af37;
-      border-radius: 12px;
-      background-color: #333;
-    }
-    .contact-item h5 {
-      margin-bottom: 15px;
-    }
-    .contact-item p {
-      margin-bottom: 15px;
-    }
-    @media (max-width: 768px) {
-      .contact-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      .contact-item {
-        width: 100%;
-        margin-bottom: 20px;
+    @media (max-width: 576px) {
+      .form-container iframe {
+        height: 500px;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container intro-container">
+  <div class="container header-intro text-center" data-aos="fade-down">
+    <img src="https://ganpatijewelleryhouse.in/images/logo.png" alt="Ganpati Logo" style="max-width: 220px; margin-bottom: 20px;">
     <blockquote class="blockquote text-white">
       <p class="mb-0">We’re thrilled to assist you in finding the perfect piece that sparkles with elegance and timeless beauty. Whether you have a question about our collections, need support with an order, or simply want to share your feedback, our dedicated team is here to help.</p>
       <footer class="blockquote-footer text-white">Ganpati Jewellery House</footer>
     </blockquote>
-    <h3 class="text-white">Our Showrooms</h3>
-    <p class="text-white">Explore our exquisite collections at any of our premier showrooms across India. Our knowledgeable staff is ready to assist you in finding the perfect jewelry piece.</p>
+    <h3 class="title-yellow mt-4">Our Showrooms</h3>
+    <p>Explore our exquisite collections at any of our premier showrooms across India. Our knowledgeable staff is ready to assist you in finding the perfect jewelry piece.</p>
   </div>
 
-  <div class="container contact-container">
-    <div class="contact-item">
-      <h5 class="title">Lakhdatta Bazar</h5>
-      <p>4, Lakhdatta Bazar, Jammu, J&K - 180001</p>
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3356.2787945998057!2d74.866959!3d32.731787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e8486c1ec8a0b%3A0x79e264e2b2c5a1dd!2sGanpati%20Jewellery%20House!5e0!3m2!1sen!2sin!4v1744452045098!5m2!1sen!2sin"></iframe>
+  <div class="container">
+    <div class="row text-center mb-5">
+      <div class="col-md-6 mb-4" data-aos="fade-up">
+        <div class="map-box">
+          <h5 class="title-yellow">Lakhdatta Bazar</h5>
+          <p>4, Lakhdatta Bazar, Jammu, J&K - 180001</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3356.2787945998057!2d74.866959!3d32.731787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e8486c1ec8a0b%3A0x79e264e2b2c5a1dd!2sGanpati%20Jewellery%20House!5e0!3m2!1sen!2sin!4v1744452045098!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="map-box">
+          <h5 class="title-yellow">Talab Tillo</h5>
+          <p>X288, Saraswati Vihar, Talab Tillo Road, Jammu</p>
+          <iframe src="https://www.google.com/maps?q=X288+Saraswati+Vihar,+Talab+Tillo,+Jammu&output=embed"></iframe>
+        </div>
       </div>
     </div>
-    <div class="contact-item">
-      <h5 class="title">Talab Tillo</h5>
-      <p>X288, Saraswati Vihar, Talab Tillo Road, Jammu</p>
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps?q=X288+Saraswati+Vihar,+Talab+Tillo,+Jammu&output=embed"></iframe>
+
+    <div class="row text-center mb-5 contact-box" data-aos="zoom-in">
+      <div class="col-md-12">
+        <p><strong>Email:</strong> <a href="mailto:info@ganpatijewelleryhouse.com" class="text-warning">info@ganpatijewelleryhouse.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+919419698800" class="text-warning">+91 94196 98800</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/919419698800" target="_blank" class="text-warning">Chat Now</a></p>
       </div>
+    </div>
+
+    <div class="form-container" data-aos="fade-up">
+      <h4 class="text-center title-yellow mb-4">Send Us a Message</h4>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8lNvt2mV2R6AJCHc0oA5hFZg2uAxzt1i1rWckl2A9LShE_A/viewform?embedded=true">Loading…</iframe>
     </div>
   </div>
 
-  <div class="container text-center mb-5">
-    <p><strong>Email:</strong> <a href="mailto:info@ganpatijewelleryhouse.com">info@ganpatijewelleryhouse.com</a></p>
-    <p><strong>Phone:</strong> <a href="tel:+919419698800">+91 94196 98800</a></p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919419698800" target="_blank">Chat Now</a></p>
+  <div class="footer" data-aos="fade-in">
+    <p>© 2025 Ganpati Jewellery House – Crafted with love, elegance, and sparkle</p>
   </div>
-
-  <div class="container form-container">
-    <h4 class="text-center title">Send Us a Message</h4>
-    <!-- Embed Google Form -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8lNvt2mV2R6AJCHc0oA5hFZg2uAxzt1i1rWckl2A9LShE_A/viewform?embedded=true">Loading…</iframe>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Ganpati Jewellery House. All rights reserved.</p>
-  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 1000 });
+  </script>
 </body>
 </html>
