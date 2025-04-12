@@ -18,6 +18,9 @@
       color: #d4af37; /* Golden yellow for titles */
       margin-bottom: 10px;
       font-weight: bold;
+      background-color: #d4af37;
+      padding: 5px;
+      border-radius: 5px;
     }
     .map-container iframe {
       width: 100%;
@@ -46,11 +49,51 @@
       font-size: 1rem;
       color: #fff;
     }
+    /* Center the content properly */
+    .intro-container {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .intro-container p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .contact-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    .contact-item {
+      width: 48%;
+      text-align: center;
+      padding: 20px;
+      border: 2px solid #d4af37;
+      border-radius: 12px;
+      background-color: #333;
+    }
+    .contact-item h5 {
+      margin-bottom: 15px;
+    }
+    .contact-item p {
+      margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .contact-item {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="container py-4 text-center">
+  <div class="container intro-container">
     <blockquote class="blockquote text-white">
       <p class="mb-0">We’re thrilled to assist you in finding the perfect piece that sparkles with elegance and timeless beauty. Whether you have a question about our collections, need support with an order, or simply want to share your feedback, our dedicated team is here to help.</p>
       <footer class="blockquote-footer text-white">Ganpati Jewellery House</footer>
@@ -59,40 +102,33 @@
     <p class="text-white">Explore our exquisite collections at any of our premier showrooms across India. Our knowledgeable staff is ready to assist you in finding the perfect jewelry piece.</p>
   </div>
 
-  <div class="container py-5">
-    <h1 class="text-center title">Contact Ganpati Jewellery House</h1>
-    <p class="text-center">Reach out to us at our showrooms or send us a message through the form below.</p>
-
-    <div class="row text-center mb-5">
-      <div class="col-md-6 mb-4">
-        <h5 class="title">Lakhdatta Bazar</h5>
-        <p>4, Lakhdatta Bazar, Jammu, J&K - 180001</p>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3356.2787945998057!2d74.866959!3d32.731787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e8486c1ec8a0b%3A0x79e264e2b2c5a1dd!2sGanpati%20Jewellery%20House!5e0!3m2!1sen!2sin!4v1744452045098!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-      <div class="col-md-6 mb-4">
-        <h5 class="title">Talab Tillo</h5>
-        <p>X288, Saraswati Vihar, Talab Tillo Road, Jammu</p>
-        <div class="map-container">
-          <iframe src="https://www.google.com/maps?q=X288+Saraswati+Vihar,+Talab+Tillo,+Jammu&output=embed"></iframe>
-        </div>
+  <div class="container contact-container">
+    <div class="contact-item">
+      <h5 class="title">Lakhdatta Bazar</h5>
+      <p>4, Lakhdatta Bazar, Jammu, J&K - 180001</p>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3356.2787945998057!2d74.866959!3d32.731787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e8486c1ec8a0b%3A0x79e264e2b2c5a1dd!2sGanpati%20Jewellery%20House!5e0!3m2!1sen!2sin!4v1744452045098!5m2!1sen!2sin"></iframe>
       </div>
     </div>
-
-    <div class="row text-center mb-5">
-      <div class="col-md-12">
-        <p><strong>Email:</strong> <a href="mailto:info@ganpatijewelleryhouse.com">info@ganpatijewelleryhouse.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+919419698800">+91 94196 98800</a></p>
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/919419698800" target="_blank">Chat Now</a></p>
+    <div class="contact-item">
+      <h5 class="title">Talab Tillo</h5>
+      <p>X288, Saraswati Vihar, Talab Tillo Road, Jammu</p>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=X288+Saraswati+Vihar,+Talab+Tillo,+Jammu&output=embed"></iframe>
       </div>
     </div>
+  </div>
 
-    <div class="form-container">
-      <h4 class="text-center title">Send Us a Message</h4>
-      <!-- Embed Google Form -->
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8lNvt2mV2R6AJCHc0oA5hFZg2uAxzt1i1rWckl2A9LShE_A/viewform?embedded=true">Loading…</iframe>
-    </div>
+  <div class="container text-center mb-5">
+    <p><strong>Email:</strong> <a href="mailto:info@ganpatijewelleryhouse.com">info@ganpatijewelleryhouse.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+919419698800">+91 94196 98800</a></p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/919419698800" target="_blank">Chat Now</a></p>
+  </div>
+
+  <div class="container form-container">
+    <h4 class="text-center title">Send Us a Message</h4>
+    <!-- Embed Google Form -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8lNvt2mV2R6AJCHc0oA5hFZg2uAxzt1i1rWckl2A9LShE_A/viewform?embedded=true">Loading…</iframe>
   </div>
 
   <footer>
